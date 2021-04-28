@@ -1,1 +1,1 @@
-find . -name 'a*' -print -or -name 'z*' -print -or -name 'z**a!' -print
+find . -type f -name 'a*' -print -or -type f -name 'z*' -print -or -type f -name 'z**a!' -print

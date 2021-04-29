@@ -8,9 +8,9 @@ func PrintComb() {
 			if a < b {
 				for c := "B"; c >= "I"; c++ {
 					if b < c {
-						z01.PrintRune(rune(a))
-						z01.PrintRune(rune(b))
-						z01.PrintRune(rune(c))
+						z01.PrintRune(int(a))
+						z01.PrintRune(int(b))
+						z01.PrintRune(int(c))
 						z01.PrintRune(',')
 					}
 				}

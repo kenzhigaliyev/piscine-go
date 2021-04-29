@@ -6,8 +6,10 @@ import (
 
 func IsNegative(nb int) {
 	if nb >= 0 {
-		z01.PrintRune(T)
+		i := 'T'
+		z01.PrintRune(i)
 	} else {
-		z01.PrintRune(F)
+		i := 'F'
+		z01.PrintRune(i)
 	}
 }

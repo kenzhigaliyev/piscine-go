@@ -7,6 +7,6 @@ func PrintStr(s string) {
 	// readString := []byte(s)
 	for _, u := range s {
 		v := string(u)
-		z01.PrintRune(v)
+		z01.PrintRune(rune(v))
 	}
 }

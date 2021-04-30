@@ -1,10 +1,11 @@
-// package piscine
-package main
+package piscine
 
-import (
-	"fmt"
-	// piscine ".."
-)
+// package main
+
+// import (
+// 	"fmt"
+// 	// piscine ".."
+// )
 
 func UltimatePointOne(n ***int) {
 	***n = ***n + 1
@@ -12,10 +13,10 @@ func UltimatePointOne(n ***int) {
 	// *n = **n
 }
 
-func main() {
-	a := 0
-	b := &a
-	n := &b
-	piscine.UltimatePointOne(&n)
-	fmt.Println(a)
-}
+// func main() {
+// 	a := 0
+// 	b := &a
+// 	n := &b
+// 	piscine.UltimatePointOne(&n)
+// 	fmt.Println(a)
+// }

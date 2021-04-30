@@ -17,7 +17,6 @@ func PrintComb() {
 						z01.PrintRune(rune(d))
 						z01.PrintRune(',')
 						z01.PrintRune(' ')
-						sdfsdf
 					}
 				}
 			}

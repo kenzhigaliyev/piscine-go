@@ -8,10 +8,11 @@ func StrRev(s string) string {
 		a++
 	}
 	for b := 0; b < a/2; b++ {
+		if
 		x := r[b]
-		y := r[a-b]
+		y := r[a-1-b]
 		r[b] = y
-		r[a-b] = x
+		r[a-1-b] = x
 	}
 	new := string(r)
 	return new

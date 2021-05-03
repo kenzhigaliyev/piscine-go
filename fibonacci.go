@@ -10,11 +10,9 @@ func Fibonacci(index int) int {
 	} else if index == 1 {
 		return 1
 	} else {
-
 		index = Fibonacci(index-1) + Fibonacci(index-2)
 		return index
 	}
-
 }
 
 func main() {

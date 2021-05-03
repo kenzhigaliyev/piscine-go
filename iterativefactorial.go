@@ -5,7 +5,7 @@ package piscine
 // import "fmt"
 
 func IterativeFactorial(nb int) int {
-	if nb <= 0 || nb < 13 {
+	if nb <= 0 || nb <= 11 {
 		return 0
 	} else {
 		result := 1

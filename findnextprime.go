@@ -4,7 +4,7 @@
 package piscine
 
 func FindNextPrime(nb int) int {
-	if nb == 1 || nb <= 0 {
+	if nb == 1 || nb <= 0 || nb > 9999999999 {
 		return 2
 	} else {
 		for i := 2; i < nb; i++ {

@@ -1,14 +1,14 @@
-// package main
+package main
 
-// import "fmt"
+import "fmt"
 
-package piscine
+// package piscine
 
 func FindNextPrime(nb int) int {
 	if nb == 1 || nb <= 0 {
 		return 2
 	}
-	for j := 0; j <= 15; j++ {
+	for j := 0; j <= 30; j++ {
 		result := nb + j
 		val := 1
 		for i := 2; i <= nb/2; i++ {
@@ -19,16 +19,15 @@ func FindNextPrime(nb int) int {
 		if val == 1 {
 			return result
 		}
-
 	}
 	return nb
 }
 
-// func main() {
-// 	fmt.Println(FindNextPrime(5))
-// 	fmt.Println(FindNextPrime(4))
-// 	fmt.Println(FindNextPrime(100000000085))
-// 	fmt.Println(FindNextPrime(42))
-// 	fmt.Println(FindNextPrime(35))
-// 	fmt.Println(FindNextPrime(62))
-// }
+func main() {
+	fmt.Println(FindNextPrime(5))
+	fmt.Println(FindNextPrime(4))
+	fmt.Println(FindNextPrime(100000000085))
+	fmt.Println(FindNextPrime(42))
+	fmt.Println(FindNextPrime(35))
+	fmt.Println(FindNextPrime(62))
+}

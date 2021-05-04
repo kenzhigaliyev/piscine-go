@@ -4,7 +4,7 @@ package piscine
 // import "fmt"
 
 func IsPrime(nb int) bool {
-	if nb == 1 && nb <= 0 {
+	if nb == 1 || nb <= 0 {
 		return false
 	}
 	for i := 2; i <= nb/2; i++ {

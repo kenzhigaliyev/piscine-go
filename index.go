@@ -1,8 +1,8 @@
-package main
+// package main
 
-// package piscine
+package piscine
 
-import "fmt"
+// import "fmt"
 
 func Index(s string, toFind string) int {
 	first := []rune(s)
@@ -34,10 +34,10 @@ func Index(s string, toFind string) int {
 	return -1
 }
 
-func main() {
-	fmt.Println(Index("Hello!", "l"))
-	fmt.Println(Index("Salut!", "Salut"))
-	fmt.Println(Index("nSSYMr^5v0TQQ", "nSSYMr^5v0TQ"))
-	fmt.Println(Index("Salut!", "alu"))
-	fmt.Println(Index("Ola!", "hOl"))
-}
+// func main() {
+// 	fmt.Println(Index("Hello!", "l"))
+// 	fmt.Println(Index("Salut!", "Salut"))
+// 	fmt.Println(Index("nSSYMr^5v0TQQ", "nSSYMr^5v0TQ"))
+// 	fmt.Println(Index("Salut!", "alu"))
+// 	fmt.Println(Index("Ola!", "hOl"))
+// }

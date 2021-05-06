@@ -10,7 +10,6 @@ func main() {
 	counter := 0
 	for index := range os.Args {
 		counter = index
-
 	}
 	for new_index := counter; new_index > 0; new_index-- {
 		for _, new_val := range os.Args[new_index] {

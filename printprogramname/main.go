@@ -11,7 +11,7 @@ import (
 func main() {
 	// val := []rune(os.Args)
 	for _, val := range os.Args[0] {
-		if val == '.' || val == '\\' {
+		if val == '.' || val == '/' {
 		} else {
 			z01.PrintRune(val)
 		}

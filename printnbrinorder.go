@@ -4,7 +4,6 @@ package piscine
 import "github.com/01-edu/z01"
 
 func PrintNbrInOrder(n int) {
-
 	var digits []int
 	counter := 0
 	number := 0
@@ -18,12 +17,8 @@ func PrintNbrInOrder(n int) {
 		counter++
 	}
 	for i := 0; i < counter; i++ {
-
 		z01.PrintRune(rune(digits[i]))
 	}
-	// for i:=0; i<=counter;i++{
-	// 	if digits
-	// }
 }
 
 // func main() {

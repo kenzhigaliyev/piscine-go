@@ -1,8 +1,8 @@
-package main
+// package main
 
-import "fmt"
+// import "fmt"
 
-// package piscine
+package piscine
 
 func Capitalize(s string) string {
 	sentence := []rune(s)
@@ -55,7 +55,7 @@ func Capitalize(s string) string {
 // 	return string(sentence)
 // }
 
-func main() {
-	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
-	fmt.Println(Capitalize("abENxNY}F$6g!"))
-}
+// func main() {
+// 	fmt.Println(Capitalize("Hello! How are you? How+are+things+4you?"))
+// 	fmt.Println(Capitalize("abENxNY}F$6g!"))
+// }

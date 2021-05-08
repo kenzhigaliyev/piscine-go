@@ -4,7 +4,7 @@ package piscine
 // import "fmt"
 
 func MakeRange(min, max int) []int {
-	if max > min {
+	if max <= min {
 		return nil
 	}
 	numbers := make([]int, max-min)

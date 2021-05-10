@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	arguments := os.Args[1:2]
+	arguments := os.Args[1:]
 	if len(arguments) == 0 {
 		fmt.Println("File name is missing")
 		return

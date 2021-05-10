@@ -9,7 +9,7 @@ import (
 func main() {
 	arguments := os.Args[1:]
 	if len(arguments) == 0 {
-		fmt.Println("File name is missing")
+		fmt.Println("File name missing")
 		return
 	} else if len(arguments) >= 2 {
 		fmt.Println("Too many arguments")

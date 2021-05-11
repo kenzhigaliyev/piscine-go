@@ -1,16 +1,14 @@
 package piscine
 
-import (
-	"fmt"
-	// "piscine"
-)
+// "fmt"
+// "piscine"
 
 func ForEach(f func(int), a []int) {
 	// numbers := make([]int, 6)
 	for i := 0; i < len(a); i++ {
 		PrintNbr(a[i])
 	}
-	fmt.Print("\n")
+	// fmt.Print("\n")
 }
 
 // func PrintNbr(i int) {

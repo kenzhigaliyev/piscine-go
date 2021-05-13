@@ -14,6 +14,7 @@ func Compact(ptr *[]string) int {
 				(*ptr)[j] = (*ptr)[j+1]
 			}
 			*ptr = (*ptr)[:len(*ptr)-1]
+		} else {
 			counter++
 		}
 	}
@@ -22,7 +23,7 @@ func Compact(ptr *[]string) int {
 			(*ptr)[i] = ""
 		}
 	}
-	(*ptr) = (*ptr)[:counter]
+	(*ptr) = (*ptr)[:len(*ptr)-counter+1]
 	return len(*ptr)
 }
 

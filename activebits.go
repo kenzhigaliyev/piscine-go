@@ -21,7 +21,6 @@ func ActiveBits(n int) int {
 		binary++
 	}
 	return binary
-
 }
 
 // func main() {

@@ -15,11 +15,13 @@ func Compact(ptr *[]string) int {
 			*ptr = (*ptr)[:len(*ptr)-1]
 		}
 	}
+
 	for i := 0; i < len(*ptr); i++ {
 		if (*ptr)[i] == " " {
 			(*ptr)[i] = ""
 		}
 	}
+	(*ptr) = (*ptr)[:3]
 	return len(*ptr)
 }
 
@@ -34,7 +36,7 @@ func Compact(ptr *[]string) int {
 // 	}
 
 // 	fmt.Println("Size after compacting:", Compact(&a))
-// 	// fmt.Println(len(a))
+// 	fmt.Println(len(a))
 // 	for _, v := range a {
 // 		fmt.Println(v)
 // 	}

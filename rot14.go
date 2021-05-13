@@ -6,7 +6,6 @@ func rot14(char rune) rune {
 	} else if char <= 'M' && char >= 'A' || char <= 'm' && char >= 'a' {
 		return char + 14
 	} else {
-
 	}
 	return char
 }

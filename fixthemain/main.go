@@ -19,13 +19,13 @@ func PrintStr(s string) {
 }
 
 func OpenDoor(ptrDoor *Door) {
-	PrintStr("Door Openin...\n")
+	PrintStr("Door Opening...\n")
 	ptrDoor.state = OPEN
 }
 
-func CloseDoor(ptrDoor *Door) bool {
+func CloseDoor(ptrDoor *Door) {
 	PrintStr("Door Closing...\n")
-	return ptrDoor.state == CLOSE
+	ptrDoor.state = CLOSE
 	// return true
 }
 

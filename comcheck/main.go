@@ -12,6 +12,7 @@ func main() {
 		for _, str := range check {
 			if val == str {
 				fmt.Println("Alert!!!")
+				return
 			}
 		}
 	}

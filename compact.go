@@ -13,17 +13,19 @@ func Compact(ptr *[]string) int {
 			for j := i; j < len(*ptr)-1; j++ {
 				(*ptr)[j] = (*ptr)[j+1]
 			}
-			*ptr = (*ptr)[:len(*ptr)-1]
-		} else {
 			counter++
+
+			// *ptr = (*ptr)[:len(*ptr)-1]
+		} else {
+			// counter++
 		}
 	}
-	for i := 0; i < len(*ptr); i++ {
-		if (*ptr)[i] == " " {
-			(*ptr)[i] = ""
-		}
-	}
-	(*ptr) = (*ptr)[:len(*ptr)-counter+1]
+	// for i := 0; i < len(*ptr); i++ {
+	// 	if (*ptr)[i] == " " {
+	// 		(*ptr)[i] = ""
+	// 	}
+	// }
+	(*ptr) = (*ptr)[:len(*ptr)-3]
 	return len(*ptr)
 }
 

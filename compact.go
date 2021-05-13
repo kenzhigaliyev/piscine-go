@@ -12,7 +12,6 @@ func Compact(ptr *[]string) int {
 		if (*ptr)[i] == "" || (*ptr)[i] == " " {
 			for j := i; j < len(*ptr)-1; j++ {
 				(*ptr)[j] = (*ptr)[j+1]
-
 			}
 			counter++
 			// *ptr = (*ptr)[:len(*ptr)-1]

@@ -1,11 +1,16 @@
+// package main
 package piscine
+
+// import "fmt"
 
 const N = 6
 
 func Compact(ptr *[]string) int {
 	// var test[] int
+	counter := 0
 	for i := 0; i < len(*ptr); i++ {
 		if (*ptr)[i] == "" {
+			counter++
 			for j := i; j < len(*ptr)-1; j++ {
 				(*ptr)[j] = (*ptr)[j+1]
 			}
@@ -13,7 +18,7 @@ func Compact(ptr *[]string) int {
 		}
 	}
 	// for i:=0;i<len(*ptr);i++{
-
+	*ptr = (*ptr)[:counter]
 	// }
 
 	return len(*ptr)

@@ -1,6 +1,6 @@
 package piscine
 
-func Abort(a, b, c, d, e int) []int {
+func Abort(a, b, c, d, e int) int {
 	new_array := []int{a, b, c, d, e}
 	// sort.Ints(new_array)
 	var arr int
@@ -13,7 +13,7 @@ func Abort(a, b, c, d, e int) []int {
 			}
 		}
 	}
-	return new_array
+	return new_array[2]
 }
 
 // func main() {

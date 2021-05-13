@@ -1,11 +1,11 @@
-// package main
+package main
 
-package piscine
+// package piscine
 
-// import (
-// 	"fmt"
-// 	// "piscine"
-// )
+import (
+	"fmt"
+	// "piscine"
+)
 
 func ActiveBits(n int) int {
 	binary := 0
@@ -16,6 +16,6 @@ func ActiveBits(n int) int {
 	return binary
 }
 
-// func main() {
-// 	fmt.Println(ActiveBits(7))
-// }
+func main() {
+	fmt.Println(ActiveBits(14))
+}

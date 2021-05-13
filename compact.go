@@ -14,17 +14,15 @@ func Compact(ptr *[]string) int {
 				(*ptr)[j] = (*ptr)[j+1]
 			}
 			*ptr = (*ptr)[:len(*ptr)-1]
-		} else {
 			counter++
 		}
 	}
-
 	for i := 0; i < len(*ptr); i++ {
 		if (*ptr)[i] == " " {
 			(*ptr)[i] = ""
 		}
 	}
-	(*ptr) = (*ptr)[:counter]
+	(*ptr) = (*ptr)[:len(*ptr)-counter]
 	return len(*ptr)
 }
 

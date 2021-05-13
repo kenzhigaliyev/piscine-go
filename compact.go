@@ -22,15 +22,15 @@ func Compact(ptr *[]string) int {
 			(*ptr)[i] = ""
 		}
 	}
-	(*ptr) = (*ptr)[:len(*ptr)-counter]
+	(*ptr) = (*ptr)[:counter]
 	return len(*ptr)
 }
 
 // func main() {
 // 	a := make([]string, N)
-// 	a[0] = "a"
-// 	a[2] = "b"
-// 	a[4] = "c"
+// 	a[0] = "aasd"
+// 	a[2] = "ba sd   "
+// 	a[4] = "casd"
 
 // 	for _, v := range a {
 // 		fmt.Println(v)

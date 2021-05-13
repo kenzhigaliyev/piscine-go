@@ -9,12 +9,12 @@ const N = 6
 func Compact(ptr *[]string) int {
 	counter := 0
 	for i := 0; i < len(*ptr); i++ {
-		if (*ptr)[i] == "" {
+		if (*ptr)[i] == "" || (*ptr)[i] == " " {
 			for j := i; j < len(*ptr)-1; j++ {
 				(*ptr)[j] = (*ptr)[j+1]
+
 			}
 			counter++
-
 			// *ptr = (*ptr)[:len(*ptr)-1]
 		} else {
 			// counter++
@@ -25,7 +25,7 @@ func Compact(ptr *[]string) int {
 	// 		(*ptr)[i] = ""
 	// 	}
 	// }
-	(*ptr) = (*ptr)[:len(*ptr)-3]
+	(*ptr) = (*ptr)[:len(*ptr)-counter+2]
 	return len(*ptr)
 }
 

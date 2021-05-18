@@ -34,7 +34,6 @@ func ListPushFront(l *List, data interface{}) {
 	}
 	val.Next = l.Head
 	l.Head = val
-
 }
 
 // func main() {

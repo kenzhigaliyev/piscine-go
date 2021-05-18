@@ -15,16 +15,16 @@
 // }
 
 // func ListPushBack(l *List, data interface{}) {
-	if l.Head == nil {
-		l.Head = &NodeL{Data: data}
-		return
-	}
+// if l.Head == nil {
+// 	l.Head = &NodeL{Data: data}
+// 	return
+// }
 
-	val := l.Head
-	for val.Next != nil {
-		val = val.Next
-	}
-	val.Next = &NodeL{Data: data}
+// val := l.Head
+// for val.Next != nil {
+// 	val = val.Next
+// }
+// val.Next = &NodeL{Data: data}
 // }
 
 package piscine

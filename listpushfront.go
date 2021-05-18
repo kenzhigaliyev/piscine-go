@@ -11,7 +11,6 @@ type List struct {
 }
 
 func ListPushFront(l *List, data interface{}) {
-
 	val := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = val

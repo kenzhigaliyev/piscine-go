@@ -6,15 +6,15 @@ package piscine
 // 	"fmt"
 // )
 
-type NodeL struct {
-	Data interface{}
-	Next *NodeL
-}
+// type NodeL struct {
+// 	Data interface{}
+// 	Next *NodeL
+// }
 
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
+// type List struct {
+// 	Head *NodeL
+// 	Tail *NodeL
+// }
 
 func ListSize(l *List) int {
 	point := l.Head
@@ -26,15 +26,15 @@ func ListSize(l *List) int {
 	return counter
 }
 
-func ListPushFront(l *List, data interface{}) {
-	val := &NodeL{Data: data}
-	if l.Head == nil {
-		l.Head = val
-		return
-	}
-	val.Next = l.Head
-	l.Head = val
-}
+// func ListPushFront(l *List, data interface{}) {
+// 	val := &NodeL{Data: data}
+// 	if l.Head == nil {
+// 		l.Head = val
+// 		return
+// 	}
+// 	val.Next = l.Head
+// 	l.Head = val
+// }
 
 // func main() {
 // 	link := &List{}

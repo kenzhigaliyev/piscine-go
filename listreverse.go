@@ -28,15 +28,15 @@
 
 package piscine
 
-func ListPushFront(l *List, data interface{}) {
-	val := &NodeL{Data: data}
-	if l.Head == nil {
-		l.Head = val
-		return
-	}
-	val.Next = l.Head
-	l.Head = val
-}
+// func ListPushFront(l *List, data interface{}) {
+// 	val := &NodeL{Data: data}
+// 	if l.Head == nil {
+// 		l.Head = val
+// 		return
+// 	}
+// 	val.Next = l.Head
+// 	l.Head = val
+// }
 
 func ListReverse(l *List) {
 	reverseList := &List{}

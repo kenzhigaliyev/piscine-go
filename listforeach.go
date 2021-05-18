@@ -16,19 +16,19 @@
 
 package piscine
 
-func ListPushBack(l *List, data interface{}) {
-	if l.Head == nil {
-		l.Head = &NodeL{Data: data}
-		return
-	}
+// func ListPushBack(l *List, data interface{}) {
+// 	if l.Head == nil {
+// 		l.Head = &NodeL{Data: data}
+// 		return
+// 	}
 
-	val := l.Head
+// 	val := l.Head
 
-	for val.Next != nil {
-		val = val.Next
-	}
-	val.Next = &NodeL{Data: data}
-}
+// 	for val.Next != nil {
+// 		val = val.Next
+// 	}
+// 	val.Next = &NodeL{Data: data}
+// }
 
 func ListForEach(l *List, f func(*NodeL)) {
 	val := l.Head

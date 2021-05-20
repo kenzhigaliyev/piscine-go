@@ -6,22 +6,22 @@
 
 package piscine
 
-type TreeNode struct {
-	Left, Right, Parent *TreeNode
-	Data                string
-}
+// type TreeNode struct {
+// 	Left, Right, Parent *TreeNode
+// 	Data                string
+// }
 
-func BTreeInsertData(root *TreeNode, data string) *TreeNode {
-	if root == nil {
-		return &TreeNode{Data: data}
-	}
-	if data < root.Data {
-		root.Left = BTreeInsertData(root.Left, data)
-	} else {
-		root.Right = BTreeInsertData(root.Right, data)
-	}
-	return root
-}
+// func BTreeInsertData(root *TreeNode, data string) *TreeNode {
+// 	if root == nil {
+// 		return &TreeNode{Data: data}
+// 	}
+// 	if data < root.Data {
+// 		root.Left = BTreeInsertData(root.Left, data)
+// 	} else {
+// 		root.Right = BTreeInsertData(root.Right, data)
+// 	}
+// 	return root
+// }
 
 // func main() {
 // 	root := &TreeNode{Data: "4"}

@@ -23,36 +23,36 @@ package piscine
 // }
 
 func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
-	// if root == nil {
-	// 	return root
-	// }
-	// if root.Data == elem {
-	// 	return root
-	// }
-
-	// if root.Data > elem {
-	// 	return BTreeSearchItem(root.Left, elem)
-	// }
-	// return BTreeSearchItem(root.Right, elem)
-
-	if root.Parent != nil {
-		if root.Parent.Data == elem {
-			return root.Parent
-		}
+	if root == nil {
+		return root
+	}
+	if root.Data == elem {
+		return root
 	}
 
-	if root.Left != nil {
-		if root.Left.Data == elem {
-			return root.Left
-		}
+	if root.Data > elem {
+		return BTreeSearchItem(root.Left, elem)
 	}
+	return BTreeSearchItem(root.Right, elem)
 
-	if root.Right != nil {
-		if root.Right.Data == elem {
-			return root.Right
-		}
-	}
-	return root
+	// if root.Parent != nil {
+	// 	if root.Parent.Data == elem {
+	// 		return root.Parent
+	// 	}
+	// }
+
+	// if root.Left != nil {
+	// 	if root.Left.Data == elem {
+	// 		return root.Left
+	// 	}
+	// }
+
+	// if root.Right != nil {
+	// 	if root.Right.Data == elem {
+	// 		return root.Right
+	// 	}
+	// }
+	// return root
 }
 
 // func main() {

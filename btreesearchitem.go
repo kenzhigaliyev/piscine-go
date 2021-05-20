@@ -1,58 +1,65 @@
 // package main
+
 package piscine
 
 // import (
 // 	"fmt"
 // )
 
-// type TreeNode struct {
-// 	Parent, Left, Right *TreeNode
-// 	Data                string
-// }
+type TreeNode struct {
+	Parent, Left, Right *TreeNode
+	Data                string
+}
 
-// func BTreeInsertData(root *TreeNode, data string) *TreeNode {
-// 	if root == nil {
-// 		return &TreeNode{Data: data}
-// 	}
-// 	if data < root.Data {
-// 		root.Left = BTreeInsertData(root.Left, data)
-// 	} else {
-// 		root.Right = BTreeInsertData(root.Right, data)
-// 	}
-// 	return root
-// }
+func BTreeInsertData(root *TreeNode, data string) *TreeNode {
+	if root == nil {
+		return &TreeNode{Data: data}
+	}
+	if data < root.Data {
+		root.Left = BTreeInsertData(root.Left, data)
+	} else {
+		root.Right = BTreeInsertData(root.Right, data)
+	}
+	if root.Left != nil {
+		root.Left.Parent = root
+	}
+	if root.Right != nil {
+		root.Right.Parent = root
+	}
+	return root
+}
 
 func BTreeSearchItem(root *TreeNode, elem string) *TreeNode {
-	if root == nil {
-		return root
-	}
-	if root.Data == elem {
-		return root
-	}
-
-	if root.Data > elem {
-		return BTreeSearchItem(root.Left, elem)
-	}
-	return BTreeSearchItem(root.Right, elem)
-
-	// if root.Parent != nil {
-	// 	if root.Parent.Data == elem {
-	// 		return root.Parent
-	// 	}
+	// if root == nil {
+	// 	return root
+	// }
+	// if root.Data == elem {
+	// 	return root
 	// }
 
-	// if root.Left != nil {
-	// 	if root.Left.Data == elem {
-	// 		return root.Left
-	// 	}
+	// if root.Data > elem {
+	// 	return BTreeSearchItem(root.Left, elem)
 	// }
+	// return BTreeSearchItem(root.Right, elem)
 
-	// if root.Right != nil {
-	// 	if root.Right.Data == elem {
-	// 		return root.Right
-	// 	}
-	// }
-	// return root
+	if root.Parent != nil {
+		if root.Parent.Data == elem {
+			return root.Parent
+		}
+	}
+
+	if root.Left != nil {
+		if root.Left.Data == elem {
+			return root.Left
+		}
+	}
+
+	if root.Right != nil {
+		if root.Right.Data == elem {
+			return root.Right
+		}
+	}
+	return root
 }
 
 // func main() {
